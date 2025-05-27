@@ -1,4 +1,5 @@
-const pool = require('../database/conexao'); // ou './db' conforme seu arquivo
+const pool = require('../database/conexao');
+console.log('Tipo do pool:', typeof pool, pool);
 ...
 const resultado = await pool.query('...');
 
