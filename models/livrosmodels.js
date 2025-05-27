@@ -1,9 +1,7 @@
-const pool = require('../database/conexao');
-// Função para buscar todos os livros
-const listarLivros = async () => {
-  const resultado = await pool.query('SELECT * FROM livros');
-  return resultado.rows;
-};
+const pool = require('../database/conexao'); // ou './db' conforme seu arquivo
+...
+const resultado = await pool.query('...');
+
 // Função para buscar um livro por ID
 const buscarLivroPorId = async (id) => {
   const resultado = await pool.query('SELECT * FROM livros WHERE id = $1', [id]);
