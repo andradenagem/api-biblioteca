@@ -1,6 +1,5 @@
 const pool = require('../database/conexao');
 console.log('Tipo do pool:', typeof pool, pool);
-...
 const resultado = await pool.query('...');
 
 // Função para buscar um livro por ID
